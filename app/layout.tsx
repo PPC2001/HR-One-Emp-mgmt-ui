@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Employee Management System',
-  description: 'A comprehensive employee CRUD application',
+  title: 'HR One - Employee Management',
+  description: 'Manage your employee records with ease',
 };
 
 export default function RootLayout({
@@ -17,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main>{children}</main>
+        <UserProvider>
+          {children}
+        </UserProvider>
       </body>
     </html>
   );

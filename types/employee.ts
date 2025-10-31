@@ -18,3 +18,14 @@ export interface EmployeeFormData {
   phone: string;
   hireDate: string;
 }
+
+// Add this for form validation errors
+export interface EmployeeFormErrors {
+  name?: string;
+  position?: string;
+  department?: string;
+  salary?: string;
+  email?: string;
+  phone?: string;
+  hireDate?: string;
+}
