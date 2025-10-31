@@ -16,3 +16,29 @@ export const GET = withApiAuthRequired(async () => {
   const data = await response.json();
   return Response.json(data);
 });
+
+
+export const POST = withApiAuthRequired(async (req: Request) => {
+  const { accessToken } = await getAccessToken();
+  const body = await req.json();
+
+  const response = await fetch(`${API_BASE_URL}/employees`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      'X-API-Key': API_KEY,
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    return new Response(text, { status: response.status });
+  }
+
+  const data = await response.json();
+  return Response.json(data);
+});
+
