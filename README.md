@@ -25,6 +25,8 @@
 Snapshots 
 <img width="1732" height="962" alt="image" src="https://github.com/user-attachments/assets/e7d51da6-951e-4b7e-a4f0-a68ba98d2030" />
 <img width="1750" height="947" alt="image" src="https://github.com/user-attachments/assets/c3d44dd3-ae10-4857-b702-88e627812859" />
+<img width="1704" height="758" alt="image" src="https://github.com/user-attachments/assets/3ecac222-6feb-46a4-94cd-92750ad067a3" />
+<img width="1627" height="851" alt="image" src="https://github.com/user-attachments/assets/949fd262-bfc6-4f84-b2c2-2897cb6fe862" />
 <img width="1675" height="910" alt="image" src="https://github.com/user-attachments/assets/2850eecc-53ad-4bcd-bd0d-1082713ed023" />
 
 
